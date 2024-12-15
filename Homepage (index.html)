@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HelpHub Homepage</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #121212;
+            color: #FFFFFF;
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem;
+            background-color: #1E1E1E;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 1.5rem;
+        }
+        nav {
+            display: flex;
+            gap: 1rem;
+        }
+        nav a {
+            color: #FFFFFF;
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            border-radius: 8px;
+            background-color: #333;
+        }
+        .categories, .foundations {
+            margin: 2rem 1rem;
+        }
+        h2 {
+            font-size: 1.2rem;
+            margin-bottom: 1rem;
+        }
+        .categories-container, .foundations-container {
+            display: flex;
+            gap: 1rem;
+            overflow-x: auto;
+        }
+        .category, .foundation {
+            background-color: #333;
+            padding: 1rem;
+            text-align: center;
+            border-radius: 8px;
+            flex: 0 0 150px;
+        }
+        footer {
+            text-align: center;
+            padding: 1rem;
+            background-color: #1E1E1E;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <h1>HelpHub: The Largest Charity Web Platform</h1>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Charities</a>
+            <a href="#">Profile</a>
+        </nav>
+    </header>
+
+    <!-- Charitable Organization Categories -->
+    <section class="categories">
+        <h2>Charitable Org. Categories &rarr;</h2>
+        <div class="categories-container">
+            <div class="category">Religious</div>
+            <div class="category">Food Banks</div>
+            <div class="category">Environmental Conservation</div>
+            <div class="category">Housing Assistance</div>
+            <div class="category">Animal Welfare</div>
+            <div class="category">Childcare</div>
+            <div class="category">Art & Culture</div>
+        </div>
+    </section>
+
+    <!-- Popular Foundations -->
+    <section class="foundations">
+        <h2>Popular Foundations &rarr;</h2>
+        <div class="foundations-container">
+            <div class="foundation">1st</div>
+            <div class="foundation">2nd</div>
+            <div class="foundation">3rd</div>
+            <div class="foundation">4th</div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        &copy; 2024 HelpHub | Connecting People to Causes
+    </footer>
+</body>
+</html>
