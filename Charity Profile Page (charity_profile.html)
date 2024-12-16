@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<link rel="stylesheet" href="style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HelpHub Profile</title>
+    <link rel="stylesheet" href="style.css">
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -117,7 +117,10 @@
             <h3>Volunteer Now!</h3>
             <p>Enter your Email Address and Join our Team!</p>
             <input type="email" placeholder="you@example.com">
-            <button>Submit</button>
+            <button id="volunteerBtn">Submit</button>
+        </div>
+        <div id="volunteerFormContainer" style="display: none;">
+            <!-- Form will be dynamically inserted here via JavaScript -->
         </div>
     </section>
 
@@ -125,5 +128,8 @@
     <footer>
         &copy; 2024 HelpHub | Connecting People to Causes
     </footer>
+
+    <!-- Link to JavaScript File -->
+    <script src="charity_profile.js"></script>
 </body>
 </html>
