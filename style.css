@@ -1,0 +1,107 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #121212;
+    color: #FFFFFF;
+}
+
+/* Header Styling */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1E1E1E;
+    padding: 1rem;
+}
+
+header h1 {
+    font-size: 2rem;
+}
+
+nav a {
+    text-decoration: none;
+    color: #FFFFFF;
+    margin-right: 1rem;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #6A5ACD;
+}
+
+/* Main Content Layout */
+.organizations {
+    margin: 2rem;
+}
+
+.filter-buttons {
+    display: flex;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.filter-buttons button {
+    background-color: #444;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    cursor: pointer;
+    color: #FFFFFF;
+    transition: background-color 0.3s;
+}
+
+.filter-buttons button:hover {
+    background-color: #6A5ACD;
+}
+
+/* Organization Cards */
+.orgs-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+}
+
+.org-card {
+    background-color: #333;
+    padding: 1rem;
+    border-radius: 8px;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.org-card:hover {
+    transform: scale(1.05);
+    background-color: #444;
+}
+
+.org-card img {
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #1E1E1E;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+button:focus,
+a:focus {
+    outline: 2px solid #6A5ACD;
+}
+
+
