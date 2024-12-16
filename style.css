@@ -104,4 +104,33 @@ a:focus {
     outline: 2px solid #6A5ACD;
 }
 
+.charity-container {
+    margin: 2rem auto;
+    width: 90%;
+    max-width: 800px;
+    text-align: center;
+}
+
+.charity-card {
+    background-color: #333;
+    color: #fff;
+    margin: 1rem 0;
+    padding: 1rem;
+    border-radius: 8px;
+}
+
+.charity-card h3 {
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+.charity-card p {
+    margin: 0.5rem 0;
+}
+
+.charity-card a {
+    color: #6A5ACD;
+    text-decoration: none;
+}
+
 
