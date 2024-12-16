@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HelpHub Profile</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #121212;
+            color: #FFFFFF;
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem;
+            background-color: #1E1E1E;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 1.5rem;
+        }
+        nav {
+            display: flex;
+            gap: 1rem;
+        }
+        nav a {
+            color: #FFFFFF;
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            border-radius: 8px;
+            background-color: #333;
+        }
+        .profile-container {
+            margin: 2rem auto;
+            padding: 1rem;
+            background-color: #1E1E1E;
+            border-radius: 8px;
+            width: 90%;
+            max-width: 600px;
+        }
+        .profile-header {
+            text-align: center;
+        }
+        .profile-header img {
+            border-radius: 50%;
+            width: 100px;
+            height: 100px;
+            object-fit: cover;
+        }
+        .profile-header h2 {
+            margin: 0.5rem 0;
+        }
+        .donation-section, .volunteer-section {
+            margin-top: 2rem;
+        }
+        .donation-section input, .volunteer-section input {
+            width: 100%;
+            padding: 0.5rem;
+            margin: 0.5rem 0;
+            border: none;
+            border-radius: 8px;
+        }
+        .donation-section button, .volunteer-section button {
+            width: 100%;
+            padding: 0.5rem;
+            background-color: #6A5ACD;
+            color: #FFFFFF;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+        footer {
+            text-align: center;
+            padding: 1rem;
+            background-color: #1E1E1E;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <h1>Profile</h1>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Charities</a>
+            <a href="#">Profile</a>
+        </nav>
+    </header>
+
+    <!-- Profile Section -->
+    <section class="profile-container">
+        <div class="profile-header">
+            <img src="profile_picture.png" alt="User Profile Picture">
+            <h2>FACE Foundation</h2>
+            <p>Saving Pets and Helping Families</p>
+        </div>
+        <div class="donation-section">
+            <h3>Donation</h3>
+            <p>Amount:</p>
+            <input type="number" placeholder="$50">
+            <p>Payment Method:</p>
+            <select>
+                <option>Credit Card</option>
+                <option>PayPal</option>
+                <option>Bank Transfer</option>
+            </select>
+            <p>Your Message:</p>
+            <input type="text" placeholder="Write a heartfelt message here">
+            <button>Donate</button>
+        </div>
+        <div class="volunteer-section">
+            <h3>Volunteer Now!</h3>
+            <p>Enter your Email Address and Join our Team!</p>
+            <input type="email" placeholder="you@example.com">
+            <button>Submit</button>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        &copy; 2024 HelpHub | Connecting People to Causes
+    </footer>
+</body>
+</html>
