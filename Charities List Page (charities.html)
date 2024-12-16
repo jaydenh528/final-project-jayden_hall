@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HelpHub Organizations</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #121212;
+            color: #FFFFFF;
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem;
+            background-color: #1E1E1E;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 1.5rem;
+        }
+        nav {
+            display: flex;
+            gap: 1rem;
+        }
+        nav a {
+            color: #FFFFFF;
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            border-radius: 8px;
+            background-color: #333;
+        }
+        .organizations {
+            margin: 2rem 1rem;
+        }
+        h2 {
+            font-size: 1.2rem;
+            margin-bottom: 1rem;
+        }
+        .filter-buttons {
+            display: flex;
+            gap: 0.5rem;
+            margin-bottom: 1rem;
+        }
+        .filter-buttons button {
+            background-color: #444;
+            color: #FFFFFF;
+            border: none;
+            padding: 0.5rem 1rem;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+        .filter-buttons button.active {
+            background-color: #6A5ACD;
+        }
+        .orgs-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+        }
+        .org-card {
+            background-color: #333;
+            padding: 1rem;
+            text-align: center;
+            border-radius: 8px;
+        }
+        .org-card img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+        footer {
+            text-align: center;
+            padding: 1rem;
+            background-color: #1E1E1E;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <h1>All Organizations</h1>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Charities</a>
+            <a href="#">Profile</a>
+        </nav>
+    </header>
+
+    <!-- Filter Buttons -->
+    <section class="organizations">
+        <div class="filter-buttons">
+            <button>Food Banks</button>
+            <button class="active">Animals</button>
+            <button>Religion</button>
+            <button>Housing</button>
+            <button>Childcare</button>
+        </div>
+
+        <!-- Organization Cards -->
+        <div class="orgs-container">
+            <div class="org-card">
+                <img src="paws_logo.png" alt="PAWS Logo">
+                <h3>PAWS</h3>
+            </div>
+            <div class="org-card">
+                <img src="hope_for_paws.png" alt="Hope for Paws Logo">
+                <h3>Hope For Paws</h3>
+            </div>
+            <div class="org-card">
+                <img src="to_your_rescue.png" alt="To Your Rescue Logo">
+                <h3>To Your Rescue</h3>
+            </div>
+            <div class="org-card">
+                <img src="turpentine_creek.png" alt="Turpentine Creek Logo">
+                <h3>Turpentine Creek</h3>
+            </div>
+            <div class="org-card">
+                <img src="adi_logo.png" alt="Animal Defenders International Logo">
+                <h3>ADI</h3>
+            </div>
+            <div class="org-card">
+                <img src="house_of_little_dogs.png" alt="House of Little Dogs Logo">
+                <h3>House of Little Dogs</h3>
+            </div>
+            <div class="org-card">
+                <img src="humane_society.png" alt="Humane Society Logo">
+                <h3>Humane Society</h3>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        &copy; 2024 HelpHub | Connecting People to Causes
+    </footer>
+</body>
+</html>
